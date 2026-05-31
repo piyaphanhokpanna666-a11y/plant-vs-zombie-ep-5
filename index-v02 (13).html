@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/ico" href="favicon.ico" />
+    <title>Plants vs Zombies-UI versions by Worachat Wannawong, Ph.D.</title>
+    <!-- Use Tailwind CSS for a clean, responsive design -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #1a202c; /* A dark, modern background color */
+        }
+        #video-background {
+            position: fixed;
+            right: 0;
+            bottom: 0;
+            min-width: 100%;
+            min-height: 100%;
+            width: auto;
+            height: auto;
+            z-index: -100;
+            background-size: cover;
+            /* Ensures the video fills the screen while maintaining aspect ratio */
+            object-fit: cover;
+        }
+    </style>
+</head>
+<body class="flex items-center justify-center min-h-screen p-4 relative">
+    <!-- Video Background -->
+    <video id="video-background" autoplay loop muted playsinline>
+        <source src="game-bg.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+
+    <!-- Main Content Container with transparent background -->
+    <div class="p-8 sm:p-12 max-w-4xl w-full text-center z-10">
+        <h1 class="text-4xl sm:text-5xl font-bold text-green-400 mb-4 bg-gray-800/50 backdrop-blur-sm p-4 rounded-xl">
+            Plants vs Zombies
+        </h1>
+        <p class="text-lg text-gray-300 mb-8 sm:mb-12 bg-gray-800/50 backdrop-blur-sm p-2 rounded-xl">
+            Choose your version and defend your home from the zombie apocalypse!
+        </p>
+        <div class="grid grid-cols-1 sm:grid-cols-3 gap-6 sm:gap-8">
+            <!-- Button for Version 1 -->
+            <a href="index-v01.html" class="flex flex-col items-center p-6 bg-green-600/70 hover:bg-green-700/70 transition duration-300 rounded-xl shadow-lg transform hover:scale-105 backdrop-blur-sm">
+                <div class="text-5xl mb-2">🧟‍♂️</div>
+                <h2 class="text-2xl font-bold text-white mb-1">Version 1</h2>
+                <p class="text-sm text-green-200">Classic zombie fun</p>
+            </a>
+
+            <!-- Button for Version 2 -->
+            <a href="index-v02.html" class="flex flex-col items-center p-6 bg-yellow-600/70 hover:bg-yellow-700/70 transition duration-300 rounded-xl shadow-lg transform hover:scale-105 backdrop-blur-sm">
+                <div class="text-5xl mb-2">🧟‍♀️</div>
+                <h2 class="text-2xl font-bold text-white mb-1">Version 2</h2>
+                <p class="text-sm text-yellow-200">Improved graphics</p>
+            </a>
+
+            <!-- Button for Version 3 -->
+            <a href="index-v03.html" class="flex flex-col items-center p-6 bg-red-600/70 hover:bg-red-700/70 transition duration-300 rounded-xl shadow-lg transform hover:scale-105 backdrop-blur-sm">
+                <div class="text-5xl mb-2">🧛‍♂️</div>
+                <h2 class="text-2xl font-bold text-white mb-1">Version 3</h2>
+                <p class="text-sm text-red-200">The ultimate challenge</p>
+            </a>
+        </div>
+    </div>
+</body>
+</html>

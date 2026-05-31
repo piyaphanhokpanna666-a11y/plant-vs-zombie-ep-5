@@ -1,0 +1,111 @@
+<html>
+  <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="icon" type="image/ico" href="favicon.ico" />
+    <title>Plants vs Zombies by Worachat W., Ph.D. 2025</title>
+
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+      }
+      .container {
+        text-align: center;
+      }
+
+      #background {
+        background: url("images/frontyard.gif");
+        width: 1024px;
+        height: 626px;
+      }
+      div.plant1 {
+        position: absolute;
+        background: url("images/plants2.png");
+        background-position: -115px -68px;
+        width: 60px;
+        height: 68px;
+        background-size: 700px;
+      }
+      div.zombie1 {
+        position: absolute;
+        background: url("images/monsters-v03.png");
+        background-position: 0px -384px;
+        width: 128px;
+        height: 128px;
+      }
+      div.zombie2 {
+        position: absolute;
+        background: url("images/monsters-v03.png");
+        background-position: 0px -256px;
+        width: 128px;
+        height: 128px;
+      }
+
+      div.zombie3 {
+        position: absolute;
+        background: url("images/monsters-v03.png");
+        background-position: 0px -136px;
+        width: 128px;
+        height: 128px;
+      }
+
+      div.zombie4 {
+        position: absolute;
+        background: url("images/monsters-v03.png");
+        background-position: 0px -15px;
+        width: 128px;
+        height: 128px;
+      }
+      div.bullet {
+        position: absolute;
+        background: url("images/plants2.png");
+        background-position: -490px 0px;
+        width: 30px;
+        height: 30px;
+        background-size: 700px;
+      }
+
+      div.explosion {
+        position: absolute;
+        width: 128px;
+        height: 128px;
+        font-size: 5rem;
+        text-align: center;
+      }
+
+      #score {
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        color: white;
+        font-size: 20px;
+        z-index: 20;
+      }
+
+      #ai-assist {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        z-index: 20;
+      }
+    </style>
+    <script src="index.js"></script>
+  </head>
+
+  <body>
+    <div class="container">
+      <div id="background">
+        <div id="zombies"></div>
+        <div id="plants"></div>
+        <div id="bullets"></div>
+      </div>
+      <div id="score">Score: 0</div>
+      <button id="ai-assist">Turn AI On</button>
+      <audio autoplay hidden loop>
+        <source src="bg-music.mp3" type="audio/ogg" />
+        Your browser does not support the audio element.
+      </audio>
+    </div>
+  </body>
+</html>
